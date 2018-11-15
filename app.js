@@ -16,10 +16,10 @@ bot.on('ready', () => {
 bot.on('guildMemberAdd', member => {
     console.log('User ' + member.user.username + ' has joined the server!')
 
-    var role = member.guild.roles.find('name', 'Random Victim');
+    var role = member.guild.roles.find('name', 'Noob');
 
     member.addRole(role)
 
 });
 
-bot.login('process.env.NTEyNDY1NTkzNDM4NDM3Mzc2.Ds6Feg.nk4bmk2p67xHTjltZMs8fkU8Ol0');
+bot.login(process.env.BOT_TOKEN);
